@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+div.wrap {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url("img-bg-01.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+section.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 70vw;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .5);
+    color: #eee;
+    text-align: center;
+}
+
+h1.title {
+    text-transform: uppercase;
+    padding: 10px;
+    flex-basis: 20%;
+}
+
+div.answer {
+    flex-grow: 1;
+    align-self: center;
+    padding: 20px;
+}
+
+button.ask {
+    flex-basis: 20%;
+    background-color: rgb(10, 10, 10);
+    padding: 15px 30px;
+    border: 4px solid rgb(88, 0, 0);
+    color: rgb(88, 0, 0);
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+button.ask:hover {
+    background-color: rgb(88, 0, 0);
+    color: rgb(10, 10, 10);
+    border-color: rgb(10, 10, 10);
+}
+
+@media (min-width:320px) {
+    section.main {
+        width: 80vw;
+        height: 60vh;
+        padding: 20px 40px;
+    }
+
+    h1.title {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    div.answer {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    button.ask {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 15px 30px;
+    }
+}
+
+@media (min-width:360px) {
+    section.main {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    h1.title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    div.answer {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    button.ask {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+@media (min-width:533px) and (orientation: landscape) {
+    section.main {
+        width: 80vw;
+        height: 80vh;
+    }
+}
+
+@media (min-width:533px) and (orientation: portrait) {
+    h1.title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    div.answer {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    button.ask {
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+@media (min-width:720px) and (orientation: landscape) {
+    section.main {
+        width: 80vw;
+        height: 50vh;
+    }
+}
+
+@media (min-width:768px) {
+    section.main {
+        width: 60vw;
+        height: 50vh;
+    }
+
+    h1.title {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    div.answer {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    button.ask {
+        font-size: 22px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    section.main {
+        padding: 40px;
+    }
+
+    h1.title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    div.answer {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    button.ask {
+        font-size: 26px;
+        line-height: 26px;
+    }
+}
